@@ -1,0 +1,144 @@
+{
+  "value": {
+    "appDefinitions": [
+      {
+        "manifestVersion": "devPreview",
+        "id": "0d820ecd-def2-4297-adad-78056cde7c78",
+        "version": "1.0.8",
+        "name": "OneNote",
+        "accentColor": "#641790",
+        "activities": {
+          "activityTypes": [
+            {
+              "description": "When someone @mentions me in a notebook",
+              "templateText": "{actor} mentioned you",
+              "type": "userMention"
+            }
+          ]
+        },
+        "inputExtensions": [
+          {
+            "botId": "00000000-0000-0000-0000-000000000000",
+            "canUpdateConfiguration": false,
+            "commands": [
+              {
+                "context": ["message"],
+                "description": "Create a task from a chat or a channel post.",
+                "fetchTask": false,
+                "id": "createTaskFromMessage",
+                "initialRun": false,
+                "taskInfo": {
+                  "height": "452",
+                  "title": "Create task",
+                  "url": "https://www.onenote.com",
+                  "width": "800"
+                },
+                "title": "Create task",
+                "type": "action"
+              }
+            ],
+            "fetchCommands": false,
+            "scopes": ["team", "personal"]
+          }
+        ],
+        "categories": [
+          "ContentManagement",
+          "FilesAndDocuments",
+          "Productivity",
+          "ProjectManagement",
+          "Microsoft"
+        ],
+        "developerName": "Microsoft Corporation",
+        "developerUrl": "http://www.onenote.com/",
+        "devicePermissions": ["Media", "notifications", "midi", "openExternal"],
+        "galleryTabs": [
+          {
+            "canHaveTabConversation": false,
+            "canUpdateConfiguration": false,
+            "configurationUrl": "https://www.onenote.com/teams/tabconfig?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&teamSiteUrl={teamSiteUrl}&channelType={channelType}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "context": [
+              "channelTab",
+              "privateChatTab",
+              "meetingChatTab",
+              "meetingDetailsTab",
+              "meetingStage"
+            ],
+            "scopes": ["team", "groupChat"]
+          }
+        ],
+        "isFullScreen": false,
+        "isFullTrust": true,
+        "isTeamsOwned": true,
+        "isTenantConfigurable": true,
+        "languageTag": "en-us",
+        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_largeImage.png?v=1.0.5",
+        "longDescription": "Use OneNote to collaborate on digital notes and notebooks and share them with your team.",
+        "permissions": ["Identity", "MessageTeamMembers"],
+        "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+        "publisherType": "FirstParty",
+        "screenshotUrls": [
+          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/1.png",
+          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/2.png"
+        ],
+        "shortDescription": "Use OneNote to collaborate on digital notes and notebooks with your team.",
+        "showLoadingIndicator": false,
+        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_smallImage.png?v=1.0.5",
+        "staticTabs": [
+          {
+            "contentUrl": "https://www.onenote.com/notes?embeddingApp=OneNoteStaticTab&ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "entityId": "MeetingsLandingPage",
+            "name": "Meeting Notes",
+            "scopes": ["personal"],
+            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+          },
+          {
+            "contentUrl": "https://www.onenote.com/teams/mynotebook?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "entityId": "MyNotebook",
+            "name": "My Notebook",
+            "scopes": ["personal"],
+            "supportedPlatform": ["mobile", "desktop", "teamsMeetingDevices"]
+          },
+          {
+            "contentUrl": "https://www.onenote.com/teams/recent?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "entityId": "RecentNotebooks",
+            "name": "Recent Notebooks",
+            "scopes": ["personal"],
+            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+          },
+          {
+            "contentUrl": "https://www.onenote.com/teams/teamNotebooks?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
+            "entityId": "TeamNotebooks",
+            "name": "Team Notebooks",
+            "scopes": ["personal"],
+            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
+          }
+        ],
+        "supportedTenantRegions": ["GCC", "GCCH"],
+        "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
+        "validDomains": [
+          "*.sharepoint.com",
+          "*.sharepoint.cn",
+          "*.sharepoint.de",
+          "*.sharepoint.us",
+          "*.sharepoint-mil.us",
+          "*.sharepoint-df.com",
+          "*.sharepointonline.com",
+          "*.onenote.com",
+          "*.office.com",
+          "*.office365.com",
+          "*.office365.cn",
+          "*.office.de",
+          "*.live.com",
+          "*.microsoft.com",
+          "onenote.com"
+        ],
+        "videoUrl": "https://www.youtube.com/watch?v=fmGVp76WyIU",
+        "webApplicationInfo": {
+          "id": "51ce06dc-fdbe-4950-b2e2-eb192b31a6ac",
+          "resource": "https://onenote.com/"
+        },
+        "supportedLanguages": ["en-us"]
+      }
+    ]
+  }
+}
