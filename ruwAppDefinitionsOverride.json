@@ -1,144 +1,1149 @@
 {
-  "value": {
-    "appDefinitions": [
-      {
-        "manifestVersion": "devPreview",
-        "id": "0d820ecd-def2-4297-adad-78056cde7c78",
-        "version": "1.0.8",
-        "name": "OneNote",
-        "accentColor": "#641790",
-        "activities": {
-          "activityTypes": [
-            {
-              "description": "When someone @mentions me in a notebook",
-              "templateText": "{actor} mentioned you",
-              "type": "userMention"
-            }
-          ]
-        },
-        "inputExtensions": [
-          {
-            "botId": "00000000-0000-0000-0000-000000000000",
-            "canUpdateConfiguration": false,
-            "commands": [
-              {
-                "context": ["message"],
-                "description": "Create a task from a chat or a channel post.",
-                "fetchTask": false,
-                "id": "createTaskFromMessage",
-                "initialRun": false,
-                "taskInfo": {
-                  "height": "452",
-                  "title": "Create task",
-                  "url": "https://www.onenote.com",
-                  "width": "800"
-                },
-                "title": "Create task",
-                "type": "action"
-              }
-            ],
-            "fetchCommands": false,
-            "scopes": ["team", "personal"]
-          }
-        ],
-        "categories": [
-          "ContentManagement",
-          "FilesAndDocuments",
-          "Productivity",
-          "ProjectManagement",
-          "Microsoft"
-        ],
-        "developerName": "Microsoft Corporation",
-        "developerUrl": "http://www.onenote.com/",
-        "devicePermissions": ["Media", "notifications", "midi", "openExternal"],
-        "galleryTabs": [
-          {
-            "canHaveTabConversation": false,
-            "canUpdateConfiguration": false,
-            "configurationUrl": "https://www.onenote.com/teams/tabconfig?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&teamSiteUrl={teamSiteUrl}&channelType={channelType}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "context": [
-              "channelTab",
-              "privateChatTab",
-              "meetingChatTab",
-              "meetingDetailsTab",
-              "meetingStage"
-            ],
-            "scopes": ["team", "groupChat"]
-          }
-        ],
-        "isFullScreen": false,
-        "isFullTrust": true,
-        "isTeamsOwned": true,
-        "isTenantConfigurable": true,
-        "languageTag": "en-us",
-        "largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_largeImage.png?v=1.0.5",
-        "longDescription": "Use OneNote to collaborate on digital notes and notebooks and share them with your team.",
-        "permissions": ["Identity", "MessageTeamMembers"],
-        "privacyUrl": "https://privacy.microsoft.com/privacystatement",
-        "publisherType": "FirstParty",
-        "screenshotUrls": [
-          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/1.png",
-          "https://statics.teams.cdn.office.net/evergreen-assets/apps/screenshots/0d820ecd-def2-4297-adad-78056cde7c78/2.png"
-        ],
-        "shortDescription": "Use OneNote to collaborate on digital notes and notebooks with your team.",
-        "showLoadingIndicator": false,
-        "smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/apps/0d820ecd-def2-4297-adad-78056cde7c78_smallImage.png?v=1.0.5",
-        "staticTabs": [
-          {
-            "contentUrl": "https://www.onenote.com/notes?embeddingApp=OneNoteStaticTab&ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "entityId": "MeetingsLandingPage",
-            "name": "Meeting Notes",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
-          },
-          {
-            "contentUrl": "https://www.onenote.com/teams/mynotebook?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "entityId": "MyNotebook",
-            "name": "My Notebook",
-            "scopes": ["personal"],
-            "supportedPlatform": ["mobile", "desktop", "teamsMeetingDevices"]
-          },
-          {
-            "contentUrl": "https://www.onenote.com/teams/recent?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "entityId": "RecentNotebooks",
-            "name": "Recent Notebooks",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
-          },
-          {
-            "contentUrl": "https://www.onenote.com/teams/teamNotebooks?ui={locale}&tenantId={tid}&upn={upn}&groupId={groupId}&theme={theme}&entityId={entityId}&subEntityId={subEntityId}&sessionId={sessionId}&ringId={ringId}&trackingId={appSessionId}&hostClientType={hostClientType}",
-            "entityId": "TeamNotebooks",
-            "name": "Team Notebooks",
-            "scopes": ["personal"],
-            "supportedPlatform": ["desktop", "teamsMeetingDevices"]
-          }
-        ],
-        "supportedTenantRegions": ["GCC", "GCCH"],
-        "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
-        "validDomains": [
-          "*.sharepoint.com",
-          "*.sharepoint.cn",
-          "*.sharepoint.de",
-          "*.sharepoint.us",
-          "*.sharepoint-mil.us",
-          "*.sharepoint-df.com",
-          "*.sharepointonline.com",
-          "*.onenote.com",
-          "*.office.com",
-          "*.office365.com",
-          "*.office365.cn",
-          "*.office.de",
-          "*.live.com",
-          "*.microsoft.com",
-          "onenote.com"
-        ],
-        "videoUrl": "https://www.youtube.com/watch?v=fmGVp76WyIU",
-        "webApplicationInfo": {
-          "id": "51ce06dc-fdbe-4950-b2e2-eb192b31a6ac",
-          "resource": "https://onenote.com/"
-        },
-        "supportedLanguages": ["en-us"]
-      }
-    ]
-  }
+	"value": {
+		"appDefinitions": [
+			{
+				"manifestVersion": "1.13",
+				"id": "0f56a9d1-f502-40f9-a9e8-816d7adbb68b",
+				"version": "2.0.0",
+				"name": "Adobe Acrobat Sign",
+				"accentColor": "#230201",
+				"activities": {
+					"activityTypes": [
+						{
+							"description": "Agreement Completed",
+							"templateText": "{localizedMessage}",
+							"type": "agreementCompleted"
+						},
+						{
+							"description": "Signature Requested",
+							"templateText": "{localizedMessage}",
+							"type": "signatureRequested"
+						},
+						{
+							"description": "Form Fill Requested",
+							"templateText": "{localizedMessage}",
+							"type": "formFillRequested"
+						},
+						{
+							"description": "Acceptance Requested",
+							"templateText": "{localizedMessage}",
+							"type": "acceptanceRequested"
+						},
+						{
+							"description": "Acknowledgement Requested",
+							"templateText": "{localizedMessage}",
+							"type": "acknowledgmentRequested"
+						},
+						{
+							"description": "Delegation Requested",
+							"templateText": "{localizedMessage}",
+							"type": "delegationRequested"
+						},
+						{
+							"description": "Approval Requested",
+							"templateText": "{localizedMessage}",
+							"type": "approvalRequested"
+						}
+					]
+				},
+				"categories": [
+					"Communication",
+					"Productivity",
+					"WorkflowAndBusinessManagement"
+				],
+				"developerName": "Adobe",
+				"developerUrl": "https://acrobat.adobe.com/us/en/sign.html",
+				"industries": [
+					"Finance",
+					"Government"
+				],
+				"keywords": [
+					"adobeApps"
+				],
+				"largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_largeImage.png?v=2.1.0",
+				"lastUpdatedAt": "2022-08-11T18:19:42.8003303Z",
+				"longDescription": "Get your documents signed faster than ever when you add Adobe Acrobat Sign to Microsoft Teams. Now, you can sign, send for e-signature, and track every step – all right from the applications that you use every day.",
+				"mpnId": "5281517",
+				"officeAssetId": "WA104381233",
+				"permissions": [
+					"Identity",
+					"MessageTeamMembers"
+				],
+				"privacyUrl": "https://www.adobe.com/go/privacy_policy",
+				"publishingPolicy": {
+					"audienceConfiguration": {
+						"allowedCountryAudience": {
+							"countrySelectionMode": "specificCountries",
+							"specificCountryAudiences": [
+								{
+									"countryCode": "AL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AQ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BB",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BJ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "BI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CV",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CX",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "HR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DJ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "EC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "EG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SV",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GQ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ER",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "EE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ET",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FJ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "DE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GP",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "HT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "HN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "HK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "HU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ID",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IQ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "IT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "JM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "JP",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "JE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "JO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LV",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LB",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MV",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ML",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MQ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "YT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MX",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "FM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MD",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ME",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NP",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MP",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "MK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "NO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "OM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "QA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "RO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "RU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "RW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "RE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "KN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "PM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "WS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ST",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "RS",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SB",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ZA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ES",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "LK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "SE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "CH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TW",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TJ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TH",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TL",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TK",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TO",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TT",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TR",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TC",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TV",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "AE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VI",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "UG",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "UA",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "GB",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "TZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "US",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "UY",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "UZ",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VU",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "VN",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "WF",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "YE",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ZM",
+									"stateAudienceSelectionMode": "allStates"
+								},
+								{
+									"countryCode": "ZW",
+									"stateAudienceSelectionMode": "allStates"
+								}
+							]
+						}
+					}
+				},
+				"restrictedTenantTypes": [
+					"Freemium"
+				],
+				"screenshotUrls": [
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/1.png?v=2.1.0",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/2.png?v=2.1.0",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/3.png?v=2.1.0",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/4.png?v=2.1.0",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/0f56a9d1-f502-40f9-a9e8-816d7adbb68b/5.png?v=2.1.0"
+				],
+				"securityComplianceInfo": {
+					"mcasId": "11641",
+					"status": "m365Certified"
+				},
+				"shortDescription": "Save time when sending, signing, and tracking agreements.",
+				"smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/0f56a9d1-f502-40f9-a9e8-816d7adbb68b_smallImage.png?v=2.1.0",
+				"staticTabs": [
+					{
+						"contentUrl": "https://static.echocdn.com/office365integration/personalTabHome.html?appVersion=2.1.0",
+						"entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f-Home",
+						"name": "Home",
+						"scopes": [
+							"personal"
+						]
+					},
+					{
+						"contentUrl": "https://static.echocdn.com/office365integration/manageTab.html?appVersion=2.1.0",
+						"entityId": "418c8988-91fe-4c51-bf69-8e8e9315995f",
+						"name": "Manage",
+						"scopes": [
+							"personal"
+						]
+					},
+					{
+						"entityId": "conversations",
+						"scopes": [
+							"personal"
+						]
+					},
+					{
+						"entityId": "about",
+						"scopes": [
+							"personal"
+						]
+					}
+				],
+				"termsOfUseUrl": "https://www.adobe.com/go/terms",
+				"validDomains": [
+					"*.*.echosign.com",
+					"*.echosign.com",
+					"*.echocdn.com",
+					"*.adobesign.com"
+				],
+				"videoUrl": "https://www.youtube.com/watch?v=a2JclC-yT_I",
+				"webApplicationInfo": {
+					"id": "ea36b867-ca67-45fd-a61b-d2be86273167",
+					"resource": "api://static.echocdn.com/ea36b867-ca67-45fd-a61b-d2be86273167"
+				}
+			},
+			{
+				"manifestVersion": "1.13",
+				"id": "ec321cf7-ae3e-4ed4-a707-ff5c18e77313",
+				"version": "3.0.2",
+				"name": "Safe Spaces",
+				"accentColor": "#FFFFFF",
+				"categories": [
+					"Communication",
+					"Utilities",
+					"WorkflowAndBusinessManagement",
+					"Education"
+				],
+				"developerName": "eCare Vault Inc.",
+				"developerUrl": "https://ecarevault.com",
+				"devicePermissions": [
+					"OpenExternal",
+					"Notifications"
+				],
+				"industries": [
+					"Education",
+					"HealthCareAndLifeSciences"
+				],
+				"keywords": [
+					"Document Sharing",
+					"Secure Chat"
+				],
+				"largeImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/ec321cf7-ae3e-4ed4-a707-ff5c18e77313_largeImage.png?v=3.0.1",
+				"lastUpdatedAt": "2022-10-11T12:15:29.2486434Z",
+				"longDescription": "Safe Spaces by eCare Vault allows you to create a HIPAA and FERPA-compliant bridge from Microsoft 365 (Microsoft Teams, Outlook, and Office Hub) directly into the community to connect all of the key caregivers and stakeholders providing support to an individual. \n\nSafe Spaces enables a student- and patient-focused collaboration environment, allowing your staff to connect with parents, clinicians, and any external collaborators such as community health departments, to share sensitive information and enhance outcomes while protecting privacy:\n\n- Invite internal and external stakeholders to securely collaborate across settings, and drive community engagement with permission-based views\n- Upload and share sensitive documents and other information both from within and outside Microsoft Teams to build a comprehensive care plan\n- Engage in multi-way or one-to-one threaded discussions via the secure chat feature\n- Subscribe to automated Safe Spaces Bot alerts to receive notifications of care team activity across users and systems\n\nSafe Spaces was built to support safe and effective hybrid collaborative environments by driving privacy-compliant virtual connectivity and communication. To enable the full eCare Vault experience [visit our website](https://ecarevault.com/) or contact [safe-spaces@ecarevault.com](mailto:safe-spaces@ecarevault.com) to learn more and talk to our team.",
+				"officeAssetId": "WA200002691",
+				"permissions": [
+					"Identity",
+					"MessageTeamMembers"
+				],
+				"privacyUrl": "https://ecarevault.com/downloads/eCare+Vault+-+Privacy+Policy.pdf",
+				"publishingPolicy": {
+					"audienceConfiguration": {
+						"allowedCountryAudience": {
+							"countrySelectionMode": "specificCountries",
+							"specificCountryAudiences": [
+								{
+									"countryCode": "US",
+									"stateAudienceSelectionMode": "allStates"
+								}
+							]
+						}
+					}
+				},
+				"screenshotUrls": [
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/ec321cf7-ae3e-4ed4-a707-ff5c18e77313/1.png?v=3.0.1",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/ec321cf7-ae3e-4ed4-a707-ff5c18e77313/2.png?v=3.0.1",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/ec321cf7-ae3e-4ed4-a707-ff5c18e77313/3.png?v=3.0.1",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/ec321cf7-ae3e-4ed4-a707-ff5c18e77313/4.png?v=3.0.1",
+					"https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/screenshots/ec321cf7-ae3e-4ed4-a707-ff5c18e77313/5.png?v=3.0.1"
+				],
+				"securityComplianceInfo": {
+					"status": "unattested"
+				},
+				"shortDescription": "Compliant & Secure Collaboration Across Systems with Safe Spaces by eCare Vault",
+				"smallImageUrl": "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/ec321cf7-ae3e-4ed4-a707-ff5c18e77313_smallImage.png?v=3.0.1",
+				"staticTabs": [
+					{
+						"contentUrl": "https://safe-spaces.com/project/{subEntityId}",
+						"entityId": "projectDetails",
+						"name": "Spaces",
+						"scopes": [
+							"personal"
+						],
+						"websiteUrl": "https://safe-spaces.com/message/gtwns"
+					},
+					{
+						"entityId": "conversations",
+						"scopes": [
+							"personal"
+						]
+					},
+					{
+						"entityId": "about",
+						"scopes": [
+							"personal"
+						]
+					}
+				],
+				"termsOfUseUrl": "https://ecarevault.com/downloads/eCare+Vault+-+Terms+of+Service.pdf",
+				"validDomains": [
+					"safe-spaces.com",
+					"documents.ecarevault.com",
+					"login.ecarevault.com",
+					"api.ecarevault.com",
+					"token.botframework.com",
+					"login.microsoftonline.com"
+				],
+				"videoUrl": "https://youtu.be/kIC6oK6eKOc",
+				"webApplicationInfo": {
+					"id": "6919164d-b678-4c3d-a268-e6fbecc1e68d",
+					"resource": "api://safe-spaces.com/botid-6919164d-b678-4c3d-a268-e6fbecc1e68d"
+				}
+			}
+		]
+	}
 }
